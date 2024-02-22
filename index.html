@@ -12,11 +12,64 @@
 </head>
 
 <body>
-    <h1>hello World</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam, cumque ratione expedita voluptatum est
-        blanditiis labore necessitatibus reprehenderit esse dolorem placeat veritatis laudantium dignissimos quaerat
-        fugiat, eos odit cum repudiandae consectetur excepturi dolores rem quia fuga. Obcaecati, distinctio. Laboriosam
-        ab quaerat non sed ullam possimus, fugit excepturi quam necessitatibus.</p>
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#1DD1001A] border border-[#1DD10066]">Bus
+                        <img src="images/bus-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <div class="hero lg:rounded-2xl text-white" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-0 rounded-2xl"></div>
+                <div class="hero-content text-center pt-20 pb-32">
+                    <div class="max-w-2xl">
+                        <h1 class="mb-10 text-2xl lg:text-5xl font-extrabold">End-to-End Travel with <br><span
+                                class="text-[#1DD100]">P
+                                Paribahan</span></h1>
+                        <p class="mb-14 font-inter text-sm lg:text-lg">Yes, you can run unit tests and view the results
+                            directly within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button id="banner-btn"
+                            class="mt-9 btn bg-[#1DD100] border-[#1DD100] font-bold text-xl text-[#030712]">
+                            Buy Tickets
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
         <script src="js/index.js"></script>
 </body>
